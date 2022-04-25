@@ -17,13 +17,18 @@ public class MarkdownParse {
             int closeBracket = markdown.indexOf("]", openBracket);
             int openParen = markdown.indexOf("(", closeBracket);
             int closeParen = markdown.indexOf(")", currentIndex); 
-            toReturn.add(markdown.substring(openParen + 1, closeParen));
+            
+            
+            if(openBracket== closeBracket+2){
+                currentIndex=closeParen+1;
+                
+            }
+            toReturn.add(markdown.substring
+                    (openParen + 1, closeParen));
             currentIndex = closeParen+1;
+            
             System.out.println("After incrementing  currentIndex is " +currentIndex);
             
-        
-            
-           
         }
         System.out.println("After while loop, the currentIndex is " +currentIndex);
 
