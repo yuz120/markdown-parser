@@ -21,10 +21,10 @@ public class MarkdownParse {
 
             currentIndex = closeParen + 1;
             System.out.println("After incrementing  currentIndex is " +currentIndex);
+            break;
+           
         }
         System.out.println("After while loop, the currentIndex is " +currentIndex);
-
-    
 
         return toReturn;
     }
