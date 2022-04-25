@@ -1,2 +1,2 @@
-[http][https://nihao.com]
-[http][https://zaijian.com]
+[nihao](https://nihao.com)
+[zaijian][https://zaijian.com]
