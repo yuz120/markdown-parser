@@ -19,9 +19,11 @@ public class MarkdownParse {
             int closeParen = markdown.indexOf(")", currentIndex); 
 
             System.out.println("Close bracket "+closeBracket+"Open Paren "+openParen);
-            
+            if(openParen==closeBracket+2){
+                currentIndex=closeParen+1;
+                continue;
+            }
             if(openParen== closeBracket+3){
-                System.out.println("hello");
                 currentIndex=closeParen+1;
                 continue;
             }
