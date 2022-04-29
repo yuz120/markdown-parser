@@ -170,8 +170,10 @@ public class MarkdownParseTest {
             assertEquals(0, parsedLinks.size());
         } catch (Exception e) {
             System.out.println("Error: file not found!");
-        }
-        @Test
+        }    
+    }
+
+    @Test
         public void testfail() {
             Path filePath = Path.of(null);
     
@@ -183,6 +185,5 @@ public class MarkdownParseTest {
             } catch (Exception e) {
                 System.out.println("Error: file not found!");
             }
-    }
 
 }
