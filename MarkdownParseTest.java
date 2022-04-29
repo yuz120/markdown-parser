@@ -171,7 +171,18 @@ public class MarkdownParseTest {
         } catch (Exception e) {
             System.out.println("Error: file not found!");
         }
-
+        @Test
+        public void testfail() {
+            Path filePath = Path.of(null);
+    
+            try {
+                String fileContents = Files.readString(filePath);
+                ArrayList<String> parsedLinks = MarkdownParse.getLinks(fileContents);
+    
+                assertEquals(0, parsedLinks.size());
+            } catch (Exception e) {
+                System.out.println("Error: file not found!");
+            }
     }
 
 }
