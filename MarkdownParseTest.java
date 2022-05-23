@@ -70,7 +70,7 @@ public class MarkdownParseTest {
         String contents = Files.readString(Path.of("snippet1.md"));
 
         List<String> expect = List.of();
-        assertEquals(MarkdownParse.getLinks(contents), expect);
+        assertEquals(expect,MarkdownParse.getLinks(contents));
     }
 
     @Test
