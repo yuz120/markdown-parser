@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "markdown-parser-my",
+			"path": "."
+		},
+		{
+			"name": "lib",
+			"path": "../../../Downloads/Spring2022/CSE15L/markdown/MarkCopy/lib"
+		}
+	],
+	"settings": {}
+}
