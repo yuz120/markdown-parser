@@ -66,8 +66,10 @@ public class MarkdownParseTest {
     
 
     @Test
-    public void testSnippet1() {
-        String contents = "[title]   (should-not-count.com)";
+    public void testSnippet1() throws IOException {
+        String contents = Files.readString(Path.of("snippet1.md"));
+
         List<String> expect = List.of();
         assertEquals(MarkdownParse.getLinks(contents), expect);
+    }
 }
