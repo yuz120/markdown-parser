@@ -87,6 +87,7 @@ public class MarkdownParseTest {
 
         List<String> expect = List.of("https://www.twitter.com",
             "https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule","https://cse.ucsd.edu/");
+            System.out.println("actual is "+MarkdownParse.getLinks(contents));
         assertEquals(expect,MarkdownParse.getLinks(contents));
     }
 }
