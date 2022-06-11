@@ -1,10 +1,13 @@
 {
     "java.project.referencedLibraries": {
         "include": [
-            "lib/**/*.jar"
+            "lib/**/*.jar",
+            "/Users/amanda/Desktop/commonmark-0.19.0.jar",
+            "/Users/amanda/Desktop/commonmark-ext-autolink-0.19.0.jar"
         ],
         "exclude": [
-            "lib/junit-4.12.jar"
+            "lib/junit-4.12.jar",
+            "lib/commonmark-ext-autolink-0.19.0.jar"
         ]
     }
 }
